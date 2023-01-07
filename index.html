@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=0, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Софт Дрим</title>
+  <link rel="stylesheet" href="./style/normalize.css">
+  <link rel="stylesheet" href="./style/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./style/graph-modal.min.css">
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href="./style/header.css">
+  <link rel="stylesheet" href="./style/hero.css">
+  <link rel="stylesheet" href="./style/about.css">
+  <link rel="stylesheet" href="./style/product.css">
+  <link rel="stylesheet" href="./style/swiper.css">
+  <link rel="stylesheet" href="./style/price.css">
+  <link rel="stylesheet" href="./style/contact.css">
+  <link rel="stylesheet" href="./style/footer.css">
+  <link rel="stylesheet" href="./style/call-back.css">
+  <link rel="stylesheet" href="./style/modal.css">
+
+  <script src="./js/swiper-bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/85f7cc5c32.js" crossorigin="anonymous"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&amp;lang=ru_RU"></script>
+  <script src="./js/graph-modal.min.js"></script>
+  <script src="./js/index.js"></script>
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-container container">
+      <a href="#" class="header-link-logo link-logo">
+        <img src="./img/logo.svg" alt="Логотип" class="logo header-logo">
+        <span>софт дрим<sup class="link-sup">TM</sup></span>
+      </a>
+      <nav class="header-nav" id="nav-link">
+        <ul class="header-nav-list list">
+          <li class="header-nav-item">
+            <a href="#about" class="header-nav-link--active header-nav-link">
+              <i class="fa-icon fa-solid fa-user-tie"></i>
+              О нас
+            </a>
+          </li>
+          <li class="header-nav-item">
+            <a href="#product" class="header-nav-link">
+              <i class="fa-icon fa-solid fa-hand-holding-heart"></i>
+              Наша продукция
+            </a>
+          </li>
+          <li class="header-nav-item">
+            <a href="#price" class="header-nav-link">
+              <i class="fa-icon fa-solid fa-money-bill-1-wave"></i>
+              Цены
+            </a>
+          </li>
+          <li class="header-nav-item">
+            <a href="#contact" class="header-nav-link">
+              <i class="fa-icon fa-solid fa-address-book"></i>
+              Контакты
+            </a>
+          </li>
+          <li class="header-nav-item">
+            <a href="#call-back" class="header-nav-link modal-link">
+              <i class="fa-icon fa-sharp fa-solid fa-phone"></i>
+              Обратный звонок
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section-hero section">
+      <div class="hero-container container">
+        <div class="hero_banner"></div>
+        <div class="hero_banner"></div>
+        <div class="hero_banner"></div>
+        <div class="hero_banner"></div>
+        <div class="hero_banner"></div>
+        <div class="hero-title-container">
+          <h1 class="hero-title">Софт Дрим</h1>
+          <p class="hero-description">На нас можно положиться!</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-about section" id="about">
+      <div class="about-container container">
+        <h2 class="about-title title">О нас</h2>
+        <p class="about-description description">
+          Здравствуй, дорогой друг!
+          Наше ателье ортопедических матрасов Софт Дрим рада представить Вашему вниманию нашу продукцию. Мы работаем для
+          Вас уже 16 лет. С 2007 года мы изготавливаем (или шьем) матрасы используя только качественные материалы, а так
+          же не забываем про заботу и любовь к нашим клиентам.
+          В нашем ателье Вы можете заказать матрасы по индивидуальным размерам, как оптом так и в розницу. У нас
+          собственное производство.
+        </p>
+      </div>
+    </section>
+
+    <section class="section-product section" id="product">
+      <div class="product-container container">
+        <h2 class="product-title title">Наша продукция</h2>
+        <p class="product-description description">
+          Наше ателье предлагаем продукцию выкокого качества, по доступным цена.
+          В изготовлении своей продукции мы используем качественные материалы. Все сшито жаккардовой тканью стеганной на
+          синтепоне.
+          <br>Теперь немного по подробнее.
+        </p>
+        <h4 class="subtitle title">Вы можете заказать матрасы:</h4>
+        <ul class="product-list list">
+          <li class="product-item item-marker">
+            <span class="span-marker">С зависимым блоком пружин.</span>
+          </li>
+          <li class="product-item item-marker">
+            <span class="span-marker">С независимым блоком пружин.</span>
+          </li>
+          <li class="product-item item-marker">
+            <span class="span-marker">С кокосовой койрой.</span>
+          </li>
+          <li class="product-item item-marker">
+            <span class="span-marker">Детский (беспружинный) матрас.</span>
+          </li>
+        </ul>
+
+        <div class="subtitle-container">
+          <h3 class="product-subtitle subtitle title">Что-же такое "независимые пружины"?</h3>
+          <div class="subtitle-description-container">
+            <div class="product_swiper-springs swiper-container">
+              <div class="product__swiper-navigation">
+                <button class="swiper-button-prev btn"></button>
+                <div class="product__swiper-pagination"></div>
+                <button class="swiper-button-next btn"></button>
+              </div>
+              <div class="swiper-wrapper">
+                <div class="product-slide swiper-slide">
+                  <button class="product-swiper-btn btn" data-graph-path="swiper1">
+                    <img src="./img/independent-springs/independent-springs1.png" alt="independent-springs"
+                      class="product-swiper-img">
+                  </button>
+                </div>
+                <div class="product-slide swiper-slide">
+                  <button class="product-swiper-btn btn" data-graph-path="swiper2">
+                    <img src="./img/independent-springs/independent-springs2.png" alt="independent-springs"
+                      class="product-swiper-img">
+                  </button>
+                </div>
+                <div class="product-slide swiper-slide">
+                  <button class="product-swiper-btn btn" data-graph-path="swiper3">
+                    <img src="./img/independent-springs/independent-springs3.png" alt="independent-springs"
+                      class="product-swiper-img">
+                  </button>
+                </div>
+                <div class="product-slide swiper-slide">
+                  <button class="product-swiper-btn btn" data-graph-path="swiper4">
+                    <img src="./img/independent-springs/independent-springs4.png" alt="independent-springs"
+                      class="product-swiper-img">
+                  </button>
+                </div>
+                <div class="product-slide swiper-slide">
+                  <button class="product-swiper-btn btn" data-graph-path="swiper5">
+                    <img src="./img/independent-springs/independent-springs5.png" alt="independent-springs"
+                      class="product-swiper-img">
+                  </button>
+                </div>
+                <div class="product-slide swiper-slide">
+                  <button class="product-swiper-btn btn" data-graph-path="swiper6">
+                    <img src="./img/independent-springs/independent-springs6.png" alt="independent-springs"
+                      class="product-swiper-img">
+                  </button>
+                </div>
+              </div>
+            </div>
+            <p class="subtitle-description description ">
+              В блоке независимых пружин каждая заключена в отдельный тканевый чехол. Между собой пружины никак не
+              связаны,
+              скреплены только сами чехлы. Это означает, что когда одна пружина прогибается, она не тянет за собой
+              соседние.
+              В результате отсутствует «эффект гамака», матрас максимально точно подстраивается под изгибы тела и
+              обеспечивает анатомически правильную поддержку позвоночника. Матрасы c независимыми пружинами популярны во
+              всем мире: они создают оптимальные условия для комфортного и здорового сна.
+            </p>
+          </div>
+        </div>
+
+        <div class="subtitle-container">
+          <h3 class="product-subtitle--coconut product-subtitle subtitle title">Кокосовая койра. Плюсы и минусы.</h3>
+          <div class="subtitle-description-container">
+            <div class="product_swiper_coconut swiper-container">
+              <div class="product__swiper-navigation">
+                <button class="swiper-button-prev btn"></button>
+                <div class="product__swiper-pagination"></div>
+                <button class="swiper-button-next btn"></button>
+              </div>
+              <div class="swiper-wrapper">
+                <div class="product-slide swiper-slide">
+                  <button class="product-swiper-btn btn" data-graph-path="swiper11">
+                    <img src="./img/coconut-coir/coconut-coir1.png" alt="coconut-coir" class="product-swiper-img">
+                  </button>
+                </div>
+                <div class="product-slide swiper-slide">
+                  <button class="product-swiper-btn btn" data-graph-path="swiper12">
+                    <img src="./img/coconut-coir/coconut-coir2.png" alt="coconut-coir" class="product-swiper-img">
+                  </button>
+                </div>
+                <div class="product-slide swiper-slide">
+                  <button class="product-swiper-btn btn" data-graph-path="swiper13">
+                    <img src="./img/coconut-coir/coconut-coir3.png" alt="coconut-coir" class="product-swiper-img">
+                  </button>
+                </div>
+                <div class="product-slide swiper-slide">
+                  <button class="product-swiper-btn btn" data-graph-path="swiper14">
+                    <img src="./img/coconut-coir/coconut-coir4.png" alt="coconut-coir" class="product-swiper-img">
+                  </button>
+                </div>
+                <div class="product-slide swiper-slide">
+                  <button class="product-swiper-btn btn" data-graph-path="swiper15">
+                    <img src="./img/coconut-coir/coconut-coir5.png" alt="coconut-coir" class="product-swiper-img">
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="coconut-description">
+              <p class="hidden-container subtitle-description description">
+                Кокосовый матрас – выбор людей, не спящих на чём попало. Эти пользователи слишком ценят своё здоровье,
+                чтобы растрачивать его на дешёвые спальные изделия. Им принципиально важно, чтобы матрас был в меру
+                жёстким, весьма долговечным и высокоэкологичным.
+                Кокосовое волокно (или стружка) – натуральный материал, отличающийся жёсткостью и чистотой – по
+                сравнению
+                с промышленной синтетикой, которую подчас производят, экономя на материалах и технологиях. Но, наряду с
+                натуральностью состава, кокосовое волокно отличается следующими положительными качествами: высокая
+                жёсткость, устойчивость к намоканию, продуваемость (легко проветривать, сушить), малая аллергенность.
+                В кокосе не заводятся клещи, плесень, грибки, большинство микробов. Кокос хорошо удерживает тепло, но
+                одновременно является и «дышащим» материалом.
+                Вреда как такового от матрасов с кокосовой стружкой не выявлено. Однако некоторые недостатки изделия
+                могут
+                вызвать ухудшение сна. Например, матрас не обеспечивает достаточного расслабления. Поскольку изделие
+                очень
+                жесткое, владелец, не привыкший к отдыху на жесткой кровати, может жаловаться на то, что ворочается
+                ночью
+                и не получает достаточную релаксацию от сна.
+              </p>
+              <div class="show-container">
+                <span class="show-more">Читать далее</span>
+              </div>
+              <blockquote class="blockquote">
+                <i class="fa-solid fa-quote-left"></i>
+                <span>
+                  Если технология производства не была нарушена, материалы не экономились, то такое изделие прослужит
+                  долгие
+                  годы – при соблюдении правил эксплуатации.
+                </span>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+
+        <div class="subtitle-container">
+          <h3 class="product-subtitle subtitle title">Детский (беспружинный) матрас.</h3>
+          <div class="subtitle-description-container">
+            <div class="product_swiper-springless swiper-container">
+              <div class="product__swiper-navigation">
+                <button class="swiper-button-prev btn"></button>
+                <div class="product__swiper-pagination"></div>
+                <button class="swiper-button-next btn"></button>
+              </div>
+              <div class="swiper-wrapper">
+                <div class="product-slide swiper-slide">
+                  <button class="product-swiper-btn btn" data-graph-path="swiper21">
+                    <img src="./img/springless/springless1.png" alt="springless" class="product-swiper-img">
+                  </button>
+                </div>
+                <div class="product-slide swiper-slide">
+                  <button class="product-swiper-btn btn" data-graph-path="swiper22">
+                    <img src="./img/springless/springless2.png" alt="springless" class="product-swiper-img">
+                  </button>
+                </div>
+                <div class="product-slide swiper-slide">
+                  <button class="product-swiper-btn btn" data-graph-path="swiper23">
+                    <img src="./img/springless/springless3.png" alt="springless" class="product-swiper-img">
+                  </button>
+                </div>
+                <div class="product-slide swiper-slide">
+                  <button class="product-swiper-btn btn" data-graph-path="swiper24">
+                    <img src="./img/springless/springless4.png" alt="springless" class="product-swiper-img">
+                  </button>
+                </div>
+              </div>
+            </div>
+            <p class="subtitle-description description ">
+              Главное отличие пружинных и беспружинных матрасов в том, что любые пружины создают пружинящий эффект, то
+              есть небольшие колебания, когда вы садитесь, ложитесь или переворачиваетесь. В отличие от пружинных, в
+              беспружинных матрасах любые колебания гасятся сразу, поскольку наполнители обладают низкими пружинящими
+              свойствами.
+            </p>
+          </div>
+        </div>
+
+        <div class="subtitle-container">
+          <h3 class="product-subtitle subtitle title">Жаккард.</h3>
+          <div class="subtitle-description-container">
+            <div class="product_swiper-jacquard swiper-container">
+              <div class="product__swiper-navigation">
+                <button class="swiper-button-prev btn"></button>
+                <div class="product__swiper-pagination"></div>
+                <button class="swiper-button-next btn"></button>
+              </div>
+              <div class="swiper-wrapper">
+                <div class="product-slide swiper-slide">
+                  <button class="product-swiper-btn btn" data-graph-path="swiper31">
+                    <img src="./img/jacquard/jacquard1.png" alt="jacquard" class="product-swiper-img">
+                  </button>
+                </div>
+                <div class="product-slide swiper-slide">
+                  <button class="product-swiper-btn btn" data-graph-path="swiper32">
+                    <img src="./img/jacquard/jacquard2.png" alt="jacquard" class="product-swiper-img">
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="coconut-description">
+              <p class="hidden-container subtitle-description description ">
+                Не каждый потребитель сможет с точностью ответить, что это за ткань жаккард. Многие покупатели считают,
+                что это состав материи или его качество. Но это далеко от истины, так называется особое переплетение
+                нитей, благодаря которому полотно выглядит изысканно и эффектно.
+                <br>Фрагменты жаккардовых полотен были найдены ещё в гробницах фараонов, но известность они приобрели
+                лишь
+                в XIX веке после изобретения Джозефом Мари Жаккардом ткацкого станка.
+                <br>Ценность его зависит от вида волокон. В самых дорогих тканях узоры сплетены из натурального шёлка
+                или
+                хлопка. Более доступными для большинства потребителей считаются ткани из синтетических нитей.
+                <br>Плотность жаккарда напрямую зависит от толщины волокон и вида плетения. На изготовление сложных
+                узоров
+                может уйти до 100 оттенков нитей, перекрученных по особой технологии. Ткань долгие годы сохраняет узор и
+                форму, она устойчива к истиранию и не растягивается.
+              </p>
+              <div class="show-container">
+                <span class="show-more">Читать далее</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-price section" id="price">
+      <div class="price-container container">
+        <h2 class="price-title title">Цены</h2>
+        <h4 class="price-subtitle subtitle">Матрас беспружинный ППУ (Кидс).</h4>
+        <p class="size-description">Размер матраса: <br> до 160 см (включительно)</p>
+
+        <ul class="price-list__title price-list list">
+          <li class="price-item__title price-item">
+            <span class="span1">Ширина</span><span class="span2">Высота</span>
+          </li>
+          <li class="price-item__title price-item">
+            Без кокосовой койры
+            <span class="span-width">
+              <span>5</span><span>8</span><span>10</span>
+            </span>
+          </li>
+          <li class="price-item__title price-item">
+            С добавлением кокосовой койры с одной стороны
+            <span class="span-width">
+              <span>5</span><span>8</span><span>10</span>
+            </span>
+          </li>
+          <li class="price-item__title price-item">
+            С добавлением кокосовой койры с двух сторон
+            <span class="span-width">
+              <span>5</span><span>8</span><span>10</span>
+            </span>
+          </li>
+        </ul>
+
+        <ul class="price-list__body price-list list">
+          <li class="price-item__body price-item">60</li>
+          <li class="price-item__body price-item">
+            <span class="span-width-body span-width">
+              <span>2180</span>
+              <span>2575</span>
+              <span>2855</span>
+            </span>
+          </li>
+          <li class="price-item__body price-item">
+            <span class="span-width-body span-width">
+              <span>2765</span>
+              <span>3245</span>
+              <span>3460</span>
+            </span>
+          </li>
+          <li class="price-item__body price-item">
+            <span class="span-width-body span-width">
+              <span>3520</span>
+              <span>3915</span>
+              <span>4130</span>
+            </span>
+          </li>
+        </ul>
+
+        <ul class="price-list__body price-list list">
+          <li class="price-item__body price-item">70</li>
+          <li class="price-item__body price-item">
+            <span class="span-width-body span-width">
+              <span>2540</span>
+              <span>3000</span>
+              <span>3250</span>
+            </span>
+          </li>
+          <li class="price-item__body price-item">
+            <span class="span-width-body span-width">
+              <span>3325</span>
+              <span>3785</span>
+              <span>4040</span>
+            </span>
+          </li>
+          <li class="price-item__body price-item">
+            <span class="span-width-body span-width">
+              <span>4110</span>
+              <span>4570</span>
+              <span>4815</span>
+            </span>
+          </li>
+        </ul>
+
+        <ul class="list-body--last price-list__body price-list list">
+          <li class="price-item__body price-item">80</li>
+          <li class="price-item__body price-item">
+            <span class="span-width-body span-width">
+              <span>2905</span>
+              <span>3435</span>
+              <span>3720</span>
+            </span>
+          </li>
+          <li class="price-item__body price-item">
+            <span class="span-width-body span-width">
+              <span>3795</span>
+              <span>4325</span>
+              <span>4615</span>
+            </span>
+          </li>
+          <li class="price-item__body price-item">
+            <span class="span-width-body span-width">
+              <span>4695</span>
+              <span>5220</span>
+              <span>5505</span>
+            </span>
+          </li>
+        </ul>
+
+        <p class="size-description">От 160 до 200</p>
+
+        <ul class="list-body--first price-list__body price-list list">
+          <li class="price-item__body price-item">60</li>
+          <li class="price-item__body price-item">
+            <span class="span-width-body span-width">
+              <span>2480</span>
+              <span>2875</span>
+              <span>3090</span>
+            </span>
+          </li>
+          <li class="price-item__body price-item">
+            <span class="span-width-body span-width">
+              <span>3090</span>
+              <span>3485</span>
+              <span>3700</span>
+            </span>
+          </li>
+          <li class="price-item__body price-item">
+            <span class="span-width-body span-width">
+              <span>3700</span>
+              <span>4095</span>
+              <span>4310</span>
+            </span>
+          </li>
+        </ul>
+
+        <ul class="price-list__body price-list list">
+          <li class="price-item__body price-item">70</li>
+          <li class="price-item__body price-item">
+            <span class="span-width-body span-width">
+              <span>2895</span>
+              <span>3355</span>
+              <span>3600</span>
+            </span>
+          </li>
+          <li class="price-item__body price-item">
+            <span class="span-width-body span-width">
+              <span>3610</span>
+              <span>4070</span>
+              <span>4320</span>
+            </span>
+          </li>
+          <li class="price-item__body price-item">
+            <span class="span-width-body span-width">
+              <span>4315</span>
+              <span>4780</span>
+              <span>5030</span>
+            </span>
+          </li>
+        </ul>
+
+        <ul class="price-list__body price-list list">
+          <li class="price-item__body price-item">80</li>
+          <li class="price-item__body price-item">
+            <span class="span-width-body span-width">
+              <span>3300</span>
+              <span>3835</span>
+              <span>4120</span>
+            </span>
+          </li>
+          <li class="price-item__body price-item">
+            <span class="span-width-body span-width">
+              <span>4050</span>
+              <span>4575</span>
+              <span>4865</span>
+            </span>
+          </li>
+          <li class="price-item__body price-item">
+            <span class="span-width-body span-width">
+              <span>4935</span>
+              <span>5460</span>
+              <span>5745</span>
+            </span>
+          </li>
+        </ul>
+
+        <ul class="price-list__body price-list list">
+          <li class="price-item__body price-item">90</li>
+          <li class="price-item__body price-item">
+            <span class="span-width-body span-width">
+              <span>3720</span>
+              <span>4310</span>
+              <span>4635</span>
+            </span>
+          </li>
+          <li class="price-item__body price-item">
+            <span class="span-width-body span-width">
+              <span>4550</span>
+              <span>5150</span>
+              <span>5470</span>
+            </span>
+          </li>
+          <li class="price-item__body price-item">
+            <span class="span-width-body span-width">
+              <span>5550</span>
+              <span>6150</span>
+              <span>6470</span>
+            </span>
+          </li>
+        </ul>
+
+        <ul class="price-list__body price-list list">
+          <li class="price-item__body price-item">100</li>
+          <li class="price-item__body price-item">
+            <span class="span-width-body span-width">
+              <span>4135</span>
+              <span>4790</span>
+              <span>5150</span>
+            </span>
+          </li>
+          <li class="price-item__body price-item">
+            <span class="span-width-body span-width">
+              <span>5060</span>
+              <span>5720</span>
+              <span>6080</span>
+            </span>
+          </li>
+          <li class="price-item__body price-item">
+            <span class="span-width-body span-width">
+              <span>6170</span>
+              <span>6785</span>
+              <span>7180</span>
+            </span>
+          </li>
+        </ul>
+
+        <ul class="price-list__body price-list list">
+          <li class="price-item__body price-item">110</li>
+          <li class="price-item__body price-item">
+            <span class="span-width-body span-width">
+              <span>4545</span>
+              <span>5270</span>
+              <span>5660</span>
+            </span>
+          </li>
+          <li class="price-item__body price-item">
+            <span class="span-width-body span-width">
+              <span>5565</span>
+              <span>6295</span>
+              <span>6690</span>
+            </span>
+          </li>
+          <li class="price-item__body price-item">
+            <span class="span-width-body span-width">
+              <span>6785</span>
+              <span>7515</span>
+              <span>7905</span>
+            </span>
+          </li>
+        </ul>
+
+        <ul class="price-list__body price-list list">
+          <li class="price-item__body price-item">120</li>
+          <li class="price-item__body price-item">
+            <span class="span-width-body span-width">
+              <span>4955</span>
+              <span>5745</span>
+              <span>6175</span>
+            </span>
+          </li>
+          <li class="price-item__body price-item">
+            <span class="span-width-body span-width">
+              <span>6070</span>
+              <span>6865</span>
+              <span>7295</span>
+            </span>
+          </li>
+          <li class="price-item__body price-item">
+            <span class="span-width-body span-width">
+              <span>7405</span>
+              <span>8235</span>
+              <span>8625</span>
+            </span>
+          </li>
+        </ul>
+
+        <ul class="price-list__body price-list list">
+          <li class="price-item__body price-item">130</li>
+          <li class="price-item__body price-item">
+            <span class="span-width-body span-width">
+              <span>5370</span>
+              <span>6230</span>
+              <span>6695</span>
+            </span>
+          </li>
+          <li class="price-item__body price-item">
+            <span class="span-width-body span-width">
+              <span>6585</span>
+              <span>7435</span>
+              <span>7900</span>
+            </span>
+          </li>
+          <li class="price-item__body price-item">
+            <span class="span-width-body span-width">
+              <span>8015</span>
+              <span>8880</span>
+              <span>9340</span>
+            </span>
+          </li>
+        </ul>
+
+        <ul class="price-list__body price-list list">
+          <li class="price-item__body price-item">140</li>
+          <li class="price-item__body price-item">
+            <span class="span-width-body span-width">
+              <span>5785</span>
+              <span>6710</span>
+              <span>7210</span>
+            </span>
+          </li>
+          <li class="price-item__body price-item">
+            <span class="span-width-body span-width">
+              <span>7085</span>
+              <span>8000</span>
+              <span>8510</span>
+            </span>
+          </li>
+          <li class="price-item__body price-item">
+            <span class="span-width-body span-width">
+              <span>8635</span>
+              <span>9560</span>
+              <span>10065</span>
+            </span>
+          </li>
+        </ul>
+
+        <ul class="price-list__body price-list list">
+          <li class="price-item__body price-item">150</li>
+          <li class="price-item__body price-item">
+            <span class="span-width-body span-width">
+              <span>6195</span>
+              <span>7190</span>
+              <span>7725</span>
+            </span>
+          </li>
+          <li class="price-item__body price-item">
+            <span class="span-width-body span-width">
+              <span>7595</span>
+              <span>8580</span>
+              <span>9120</span>
+            </span>
+          </li>
+          <li class="price-item__body price-item">
+            <span class="span-width-body span-width">
+              <span>9250</span>
+              <span>10245</span>
+              <span>10780</span>
+            </span>
+          </li>
+        </ul>
+
+        <ul class="list-body-last price-list__body price-list list">
+          <li class="price-item__body price-item">160</li>
+          <li class="price-item__body price-item">
+            <span class="span-width-body span-width">
+              <span>6610</span>
+              <span>7665</span>
+              <span>8235</span>
+            </span>
+          </li>
+          <li class="price-item__body price-item">
+            <span class="span-width-body span-width">
+              <span>8100</span>
+              <span>9150</span>
+              <span>9725</span>
+            </span>
+          </li>
+          <li class="price-item__body price-item">
+            <span class="span-width-body span-width">
+              <span>9870</span>
+              <span>10930</span>
+              <span>11500</span>
+            </span>
+          </li>
+        </ul>
+
+        <ul class="list-body--last price-list__body price-list list">
+          <li class="table-description price-item"></li>
+          <li class="table-description price-item">
+            <ul class="list">
+              <li class="item-marker">
+                <span class="span-marker">Пенополиуретан повышенной 22 прочности</span>
+              </li>
+            </ul>
+          </li>
+          <li class="table-description price-item">
+            <ul class="list">
+              <li class="item-marker">
+                <span class="span-marker">Пенополиуретан повышенной 22 прочности</span>
+              </li>
+              <li class="item-marker">
+                <span class="span-marker">Кокосовая койра 10мм</span>
+              </li>
+              <li class="item-marker">
+                <span class="span-marker">Жаккард, стеганный на синтипоне</span>
+              </li>
+            </ul>
+          </li>
+          <li class="table-description price-item">
+            <ul class="list">
+              <li class="item-marker">
+                <span class="span-marker">Пенополиуретан повышенной 22 прочности</span>
+              </li>
+              <li class="item-marker">
+                <span class="span-marker">Кокосовая койра 20мм</span>
+              </li>
+              <li class="item-marker">
+                <span class="span-marker">Жаккард, стеганный на синтипоне</span>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <h4 class="price-subtitle subtitle">Матрас ортопедический Люкс блок независимых пружин.</h4>
+        <p class="size-description">Размер матраса: <br> до 160 см (включительно)</p>
+
+        <ul class="list-body--first list-body-last price-list__body price-list list">
+          <li class="price-item__title--l price-item">Ширина</li>
+          <li class="price-item__title price-item">Без кокосовой койры</li>
+          <li class="price-item__title price-item">С добавлением кокосовой койры с одной стороны</li>
+          <li class="price-item__title price-item">С добавлением кокосовой койры с двух сторон</li>
+        </ul>
+
+        <ul class="list-body--last price-list__body price-list list">
+          <li class="price-item__body price-item">80</li>
+          <li class="price-item__body price-item">8880</li>
+          <li class="price-item__body price-item">9875</li>
+          <li class="price-item__body price-item">10810</li>
+        </ul>
+
+        <p class="size-description">От 160 до 200</p>
+
+        <ul class="list-body--first price-list__body price-list list">
+          <li class="price-item__body price-item">80</li>
+          <li class="price-item__body price-item">9170</li>
+          <li class="price-item__body price-item">10860</li>
+          <li class="price-item__body price-item">12550</li>
+        </ul>
+
+        <ul class="price-list__body price-list list">
+          <li class="price-item__body price-item">90</li>
+          <li class="price-item__body price-item">10140</li>
+          <li class="price-item__body price-item">11950</li>
+          <li class="price-item__body price-item">13765</li>
+        </ul>
+
+        <ul class="price-list__body price-list list">
+          <li class="price-item__body price-item">100</li>
+          <li class="price-item__body price-item">11100</li>
+          <li class="price-item__body price-item">13045</li>
+          <li class="price-item__body price-item">14965</li>
+        </ul>
+
+        <ul class="price-list__body price-list list">
+          <li class="price-item__body price-item">110</li>
+          <li class="price-item__body price-item">12600</li>
+          <li class="price-item__body price-item">14120</li>
+          <li class="price-item__body price-item">16260</li>
+        </ul>
+
+        <ul class="price-list__body price-list list">
+          <li class="price-item__body price-item">120</li>
+          <li class="price-item__body price-item">13030</li>
+          <li class="price-item__body price-item">15195</li>
+          <li class="price-item__body price-item">17730</li>
+        </ul>
+
+        <ul class="price-list__body price-list list">
+          <li class="price-item__body price-item">130</li>
+          <li class="price-item__body price-item">14450</li>
+          <li class="price-item__body price-item">17070</li>
+          <li class="price-item__body price-item">19695</li>
+        </ul>
+
+        <ul class="price-list__body price-list list">
+          <li class="price-item__body price-item">140</li>
+          <li class="price-item__body price-item">15245</li>
+          <li class="price-item__body price-item">18225</li>
+          <li class="price-item__body price-item">21200</li>
+        </ul>
+
+        <ul class="price-list__body price-list list">
+          <li class="price-item__body price-item">150</li>
+          <li class="price-item__body price-item">17425</li>
+          <li class="price-item__body price-item">19965</li>
+          <li class="price-item__body price-item">22505</li>
+        </ul>
+
+        <ul class="price-list__body price-list list">
+          <li class="price-item__body price-item">160</li>
+          <li class="price-item__body price-item">17605</li>
+          <li class="price-item__body price-item">20270</li>
+          <li class="price-item__body price-item">22945</li>
+        </ul>
+
+        <ul class="price-list__body price-list list">
+          <li class="price-item__body price-item">170</li>
+          <li class="price-item__body price-item">18600</li>
+          <li class="price-item__body price-item">21375</li>
+          <li class="price-item__body price-item">24145</li>
+        </ul>
+
+        <ul class="price-list__body price-list list">
+          <li class="price-item__body price-item">180</li>
+          <li class="price-item__body price-item">19605</li>
+          <li class="price-item__body price-item">22470</li>
+          <li class="price-item__body price-item">25340</li>
+        </ul>
+
+        <ul class="list-body-last price-list__body price-list list">
+          <li class="price-item__body price-item">200</li>
+          <li class="price-item__body price-item">21780</li>
+          <li class="price-item__body price-item">25500</li>
+          <li class="price-item__body price-item">29960</li>
+        </ul>
+
+        <ul class="list-body--last price-list__body price-list list">
+          <li class="table-description price-item"></li>
+          <li class="table-description price-item">
+            <ul class="list">
+              <li class="item-marker">
+                <span class="span-marker">Пружинный блок на независимой пружине 256 шт. м<sup>2</sup></span>
+              </li>
+              <li class="item-marker">
+                <span class="span-marker">Периметр ППУ 5-10 см</span>
+              </li>
+              <li class="item-marker">
+                <span class="span-marker">Войлок термопрессованный</span>
+              </li>
+              <li class="item-marker">
+                <span class="span-marker">ППУ 15-20 мм</span>
+              </li>
+              <li class="item-marker">
+                <span class="span-marker">Трикотаж дублированный на синтипоне 100 гр/м<sup>2</sup></span>
+              </li>
+            </ul>
+          </li>
+          <li class="table-description price-item">
+            <ul class="list">
+              <li class="item-marker">
+                <span class="span-marker">Пружинный блок на независимой пружине 256 шт. м<sup>2</sup></span>
+              </li>
+              <li class="item-marker">
+                <span class="span-marker">Периметр ППУ 5-10 см</span>
+              </li>
+              <li class="item-marker">
+                <span class="span-marker">Войлок термопрессованный</span>
+              </li>
+              <li class="item-marker">
+                <span class="span-marker">Кокосовая койра 10-20 мм с одной стороны</span>
+              </li>
+              <li class="item-marker">
+                <span class="span-marker">ППУ 15-20 мм</span>
+              </li>
+              <li class="item-marker">
+                <span class="span-marker">Трикотаж дублированный на синтипоне 100 гр/м<sup>2</sup></span>
+              </li>
+            </ul>
+          </li>
+          <li class="table-description price-item">
+            <ul class="list">
+              <li class="item-marker">
+                <span class="span-marker">Пружинный блок на независимой пружине 256 шт. м<sup>2</sup></span>
+              </li>
+              <li class="item-marker">
+                <span class="span-marker">Периметр ППУ 5-10 см</span>
+              </li>
+              <li class="item-marker">
+                <span class="span-marker">Войлок термопрессованный</span>
+              </li>
+              <li class="item-marker">
+                <span class="span-marker">Кокосовая койра 10-20 мм с двух сторон</span>
+              </li>
+              <li class="item-marker">
+                <span class="span-marker">ППУ 15-20 мм</span>
+              </li>
+              <li class="item-marker">
+                <span class="span-marker">Трикотаж дублированный на синтипоне 100 гр/м<sup>2</sup></span>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+
+      </div>
+    </section>
+
+    <section class="section-contact section" id="contact">
+      <div class="contact-container container">
+        <h2 class="contact-title title">Контакты</h2>
+        <div class="contact-flex-container">
+          <div class="contact-left">
+            <div class="contact-schedule-container">
+              <h4 class="price-subtitle subtitle">Мы находимся по адресу:</h4>
+              <address>
+                <span>проспект Автомобилистов 1б ст.2</span>
+                <span>Мебелин, 3 зал</span>
+              </address>
+              <h4 class="price-subtitle subtitle">График работы:</h4>
+              <p>Работаем для Вас с 10 до 19, без выходных.</p>
+            </div>
+            <div class="contact-link-container">
+              <a href="tel:+79085937375" class="phone-link contact-link">
+                <i class="fa-solid fa-phone-volume icon-social"></i>
+                +7-908-593-73-75
+              </a>
+              <a href="mailto:softdream@inbox.ru" class="mail-link contact-link">
+                <i class="fa-solid fa-envelope icon-social"></i>
+                softdream@inbox.ru
+              </a>
+            </div>
+          </div>
+          <div class="contact-right">
+            <div id="map" class="map-container"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container container">
+      <a href="#" class="footer-link-logo link-logo">
+        <img src="./img/logo.svg" alt="Логотип" class="logo footer-logo">
+        <span>софт дрим<sup class="link-sup">TM</sup></span>
+      </a>
+      <a href="https://vk.com/public213021203" target="_blank" class="footer-vk-link"><i
+          class="fa-brands fa-vk"></i></a>
+    </div>
+  </footer>
+
+  <div id="call-back" class="call-back">
+    <div class="call-back__content">
+      <h4 class="call-back__title subtitle title">Обратный звонок</h4>
+      <button class="close-btn"></button>
+      <p class="call-back__description">
+        Выс можете заказать обратный звонок или отправить интересующий Вас вопрос нам на электронную почту.
+      </p>
+      <form action="#" class="call-back__form">
+        <div class="call-back__left">
+          <label class="call-back__label">
+            <input type="text" class="call-back__input" placeholder="Как Вас зовут?">
+          </label>
+          <label class="call-back__label">
+            <input type="tel" class="call-back__input" placeholder="Номер Вашего телефона">
+          </label>
+          <button class="call-back__btn">Отправить</button>
+        </div>
+        <div class="call-back__right">
+          <label class="call-back__label">
+            <input type="text" class="call-back__input" placeholder="Как Вас зовут?">
+          </label>
+          <label class="call-back__label">
+            <input type="email" class="call-back__input" placeholder="Ваш email">
+          </label>
+          <label class="call-back__label">
+            <textarea name="textarea" cols="7" maxlength="800" class="textarea call-back__input"
+              placeholder="Какой у Вас вопрос?.."></textarea>
+          </label>
+          <button class="call-back__btn">Отправить</button>
+        </div>
+      </form>
+      <p class="call-back__info">
+        Нажимая “отправить”, вы даете согласие на обработку персональных данных и соглашаетесь с нашей
+        <a href="#" class="call-back__info-link">
+          <span>политикой конфиденциальности</span>
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <div class="modal">
+    <div class="modal__container" data-graph-target="swiper1">
+      <button class="btn modal__close popup__btn-close"></button>
+      <div class="modal-content">
+        <div class="popun__img-container">
+          <img src="./img/modal/independent-springs/independent-springs1.png" class="popup__img "
+            alt="independent-springs">
+        </div>
+      </div>
+    </div>
+    <div class="modal__container" data-graph-target="swiper2">
+      <button class="btn modal__close popup__btn-close"></button>
+      <div class="modal-content">
+        <div class="popun__img-container">
+          <img src="./img/modal/independent-springs/independent-springs2.png" class="popup__img "
+            alt="independent-springs">
+        </div>
+      </div>
+    </div>
+    <div class="modal__container" data-graph-target="swiper3">
+      <button class="btn modal__close popup__btn-close"></button>
+      <div class="modal-content">
+        <div class="popun__img-container">
+          <img src="./img/modal/independent-springs/independent-springs3.png" class="popup__img "
+            alt="independent-springs">
+        </div>
+      </div>
+    </div>
+    <div class="modal__container" data-graph-target="swiper4">
+      <button class="btn modal__close popup__btn-close"></button>
+      <div class="modal-content">
+        <div class="popun__img-container">
+          <img src="./img/modal/independent-springs/independent-springs4.png" class="popup__img "
+            alt="independent-springs">
+        </div>
+      </div>
+    </div>
+    <div class="modal__container" data-graph-target="swiper5">
+      <button class="btn modal__close popup__btn-close"></button>
+      <div class="modal-content">
+        <div class="popun__img-container">
+          <img src="./img/modal/independent-springs/independent-springs5.png" class="popup__img "
+            alt="independent-springs">
+        </div>
+      </div>
+    </div>
+    <div class="modal__container" data-graph-target="swiper6">
+      <button class="btn modal__close popup__btn-close"></button>
+      <div class="modal-content">
+        <div class="popun__img-container">
+          <img src="./img/modal/independent-springs/independent-springs6.png" class="popup__img "
+            alt="independent-springs">
+        </div>
+      </div>
+    </div>
+
+    <div class="modal__container" data-graph-target="swiper11">
+      <button class="btn modal__close popup__btn-close"></button>
+      <div class="modal-content">
+        <div class="popun__img-container">
+          <img src="./img/modal/coconut-coir/coconut-coir1.png" class="popup__img " alt="coconut-coir">
+        </div>
+      </div>
+    </div>
+    <div class="modal__container" data-graph-target="swiper12">
+      <button class="btn modal__close popup__btn-close"></button>
+      <div class="modal-content">
+        <div class="popun__img-container">
+          <img src="./img/modal/coconut-coir/coconut-coir2.png" class="popup__img " alt="coconut-coir">
+        </div>
+      </div>
+    </div>
+    <div class="modal__container" data-graph-target="swiper13">
+      <button class="btn modal__close popup__btn-close"></button>
+      <div class="modal-content">
+        <div class="popun__img-container">
+          <img src="./img/modal/coconut-coir/coconut-coir3.png" class="popup__img " alt="coconut-coir">
+        </div>
+      </div>
+    </div>
+    <div class="modal__container" data-graph-target="swiper14">
+      <button class="btn modal__close popup__btn-close"></button>
+      <div class="modal-content">
+        <div class="popun__img-container">
+          <img src="./img/modal/coconut-coir/coconut-coir4.png" class="popup__img " alt="coconut-coir">
+        </div>
+      </div>
+    </div>
+    <div class="modal__container" data-graph-target="swiper15">
+      <button class="btn modal__close popup__btn-close"></button>
+      <div class="modal-content">
+        <div class="popun__img-container">
+          <img src="./img/modal/coconut-coir/coconut-coir.png" class="popup__img " alt="coconut-coir">
+        </div>
+      </div>
+    </div>
+
+    <div class="modal__container" data-graph-target="swiper21">
+      <button class="btn modal__close popup__btn-close"></button>
+      <div class="modal-content">
+        <div class="popun__img-container">
+          <img src="./img/modal/springless/springless1.png" class="popup__img " alt="springless">
+        </div>
+      </div>
+    </div>
+    <div class="modal__container" data-graph-target="swiper22">
+      <button class="btn modal__close popup__btn-close"></button>
+      <div class="modal-content">
+        <div class="popun__img-container">
+          <img src="./img/modal/springless/springless2.png" class="popup__img " alt="springless">
+        </div>
+      </div>
+    </div>
+    <div class="modal__container" data-graph-target="swiper23">
+      <button class="btn modal__close popup__btn-close"></button>
+      <div class="modal-content">
+        <div class="popun__img-container">
+          <img src="./img/modal/springless/springless3.png" class="popup__img " alt="springless">
+        </div>
+      </div>
+    </div>
+    <div class="modal__container" data-graph-target="swiper24">
+      <button class="btn modal__close popup__btn-close"></button>
+      <div class="modal-content">
+        <div class="popun__img-container">
+          <img src="./img/modal/springless/springless.png" class="popup__img " alt="springless">
+        </div>
+      </div>
+    </div>
+
+    <div class="modal__container" data-graph-target="swiper31">
+      <button class="btn modal__close popup__btn-close"></button>
+      <div class="modal-content">
+        <div class="popun__img-container">
+          <img src="./img/modal/jacquard/jacquard1.png" class="popup__img " alt="jacquard">
+        </div>
+      </div>
+    </div>
+    <div class="modal__container" data-graph-target="swiper32">
+      <button class="btn modal__close popup__btn-close"></button>
+      <div class="modal-content">
+        <div class="popun__img-container">
+          <img src="./img/modal/jacquard/jacquard2.png" class="popup__img " alt="jacquard">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+.footer {
+  height: 80px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  height: 100%;
+}
+
+.fa-vk {
+  font-size: 62px;
+  color: var(--title-color);
+  transition: color .2s ease;
+}
+
+.fa-vk:hover {
+  color: var(--hover-color);
+}

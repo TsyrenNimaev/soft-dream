@@ -1,0 +1,104 @@
+.product-description {
+  margin-bottom: 15px;
+}
+
+.product-list {
+  margin-bottom: 25px;
+}
+
+.subtitle-description-container {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.subtitle-description {
+  width: 65%;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-bottom: 50px;
+}
+
+.product-subtitle--coconut {
+  margin-bottom: 25px;
+}
+
+.coconut-description {
+  width: 65%;
+}
+
+.coconut-description p {
+  width: 100%;
+}
+
+.show-more {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 25px;
+  padding-left: 15px;
+  font-size: 16px;
+  color: var(--hero-title-color);
+  cursor: pointer;
+  transition: color .2s ease;
+}
+
+.show-more:hover {
+  color: var(--hero-subtitle-color);
+}
+
+.show-more::before,
+.show-more::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-left: 1px solid var(--hero-title-color);
+  border-bottom: 1px solid var(--hero-title-color);
+  transform: rotate(-45deg);
+  transition: transform .2s ease, border-color .2s ease;
+}
+
+.show-more::after {
+  top: 6px;
+}
+
+.show-more:hover::before,
+.show-more:hover::after {
+  transform: translateY(5px) rotate(-45deg);
+  border-color: var(--hero-subtitle-color);
+}
+
+.hidden-container.active {
+  max-height: max-content;
+}
+
+.show-more.active {
+  display: none;
+}
+
+.show-container {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.blockquote {
+  display: flex;
+  margin-top: 0;
+  font-family: "Caveat";
+  font-size: 26px;
+  color: var(--text-color);
+}
+
+.fa-quote-left {
+  margin-right: 20px;
+  font-size: 48px;
+  color: var(--hero-title-color);
+}
+
+.hidden-container {
+  height: auto;
+  max-height: 230px;
+  margin-bottom: 30px;
+  overflow: hidden;
+}

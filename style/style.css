@@ -1,0 +1,208 @@
+:root {
+  --white-color: #fff;
+  --text-color: #333;
+  --title-color: #0B5385;
+  --hover-color: #23BDEF;
+  --body-color: #f2f2f2;
+  --hero-title-color: #00AFF2;
+  --hero-subtitle-color: #494EAC;
+  --border-color: rgba(35, 189, 239, 0.2);
+  --table-color: rgba(35, 189, 239, 0.6);
+  --text-size: 18px;
+  --text-height: 32px;
+}
+
+@font-face {
+  font-family: "Beaver";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Beaver/beaver.woff2") format("woff2"), url("../fonts/Beaver/beaver.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Caveat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Caveat/Caveat-Regular.woff2") format("woff2"), url("../fonts/Caveat/Caveat-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Caveat";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/Caveat/Caveat-Bold.woff2") format("woff2"), url("../fonts/Caveat/Caveat-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "NotoSans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/NotoSans/NotoSans-Regular.woff2") format("woff2"), url("../fonts/NotoSans/NotoSans-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "NotoSans";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/NotoSans/NotoSans-Bold.woff2") format("woff2"), url("../fonts/NotoSans/NotoSans-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Olietta";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Olietta/olietta.woff2") format("woff2"), url("../fonts/Olietta/olietta.woff") format("woff");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "NotoSans", sans-serif;
+  font-size: var(--text-size);
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 250vh;
+  background-color: var(--body-color);
+}
+
+::-webkit-scrollbar-button {
+  width: 8px;
+  height: 0;
+}
+
+/* Цвет дорожки, по которой двигается бегунок прокрутки. */
+::-webkit-scrollbar-track {
+  background-color: var(--border-color);
+}
+
+/* Цвет бегунка полосы, а так же его закругление. */
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background-color: var(--hero-title-color);
+  transition: background-color .2s ease;
+}
+
+/* Цвет бегунка при наведении на него курсора. */
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--hero-subtitle-color);
+}
+
+/* Основная ширина полосы прокрутки. */
+::-webkit-resizer {
+  width: 8px;
+  height: 0px
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+body.lock {
+  overflow: hidden;
+  padding-right: 8px;
+}
+
+h1, h2, h3, h4, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--title-color);
+}
+
+button {
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  color: var(--title-color);
+  cursor: pointer;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1440px;
+  max-width: 1440px;
+  background-color: var(--white-color);
+  padding: 40px 30px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+}
+
+.section {
+  margin-top: 10px;
+}
+
+.list {
+  list-style: none;
+}
+
+.title {
+  margin-bottom: 15px;
+  font-size: 30px;
+  font-weight: 400;
+  color: var(--title-color);
+}
+
+.subtitle {
+  font-size: 22px;
+}
+
+.description {
+  width: 75%;
+  line-height: var(--text-height);
+}
+
+.link-logo {
+  display: flex;
+  align-items: center;
+  font-family: "NotoSans";
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: color .2s ease;
+}
+
+.link-sup {
+  font-size: 10px;
+  vertical-align: revert;
+}
+
+.link-logo:hover {
+  color: var(--hover-color);
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  margin-right: 10px;
+}
+
+.item-marker {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+.span-marker::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--hover-color);
+}
+
+.btn {
+  border: none;
+  appearance: none;
+  background-color: transparent;
+}
