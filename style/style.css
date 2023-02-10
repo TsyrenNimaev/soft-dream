@@ -65,6 +65,7 @@ html {
 }
 
 body {
+  /* padding: 0 5px; */
   min-height: 250vh;
   background-color: var(--body-color);
 }
@@ -127,7 +128,7 @@ button {
 
 .container {
   margin: 0 auto;
-  width: 1440px;
+  /* width: 1440px; */
   max-width: 1440px;
   background-color: var(--white-color);
   padding: 40px 30px;
@@ -137,6 +138,8 @@ button {
 
 .section {
   margin-top: 10px;
+  /* padding: 0 5px; */
+  scroll-margin-top: 80px;
 }
 
 .list {
@@ -205,4 +208,34 @@ button {
   border: none;
   appearance: none;
   background-color: transparent;
+}
+
+@media (max-width: 1280px) {
+  .link-logo {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .link-logo {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+  }
+
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .description {
+    width: 100%;
+    /* line-height: var(--text-height); */
+  }
+}
+
+@media (max-width: 950px) {
+  .container {
+    padding: 20px 10px;
+  }
 }

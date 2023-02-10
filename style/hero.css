@@ -215,7 +215,7 @@
 }
 
 .hero-title-container {
-  width: 40%;
+  width: 50%;
   position: relative;
   padding-top: 220px;
   padding-bottom: 250px;
@@ -226,7 +226,7 @@
 
 .hero-title {
   position: relative;
-  max-width: 350px;
+  /* max-width: 350px; */
   margin-bottom: 15px;
   font-family: "Olietta";
   font-size: 70px;
@@ -271,4 +271,31 @@
   font-size: 28px;
   font-weight: 600;
   color: var(--hero-subtitle-color);
+}
+
+@media (max-width: 1024px) {
+  .hero-title-container {
+    padding-left: 40px;
+    background: linear-gradient(-270deg, var(--white-color) 90%, transparent 100%);
+  }
+}
+
+@media (max-width: 868px) {
+  .hero-title-container {
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 350px;
+    text-align: center;
+    background: linear-gradient(-180deg, var(--white-color) 20%, transparent 100%);
+  }
+}
+
+@media (max-width: 450px) {
+  .hero-title {
+    font-size: 60px;
+  }
+
+  .hero-description {
+    font-size: 20px;
+  }
 }

@@ -87,7 +87,6 @@ window.addEventListener('DOMContentLoaded', function () {
       {},
       {
         iconLayout: 'default#image',
-        // iconImageHref: 'img/logo.svg',
         iconImageSize: [28, 40],
         iconImageOffset: [-3, -42],
       }
@@ -190,4 +189,16 @@ window.addEventListener('DOMContentLoaded', function () {
 
   /**/
   const modal = new GraphModal();
+
+  //menu
+  const menu = document.querySelector('.menu');
+  const headerNav = document.querySelector('.header-nav');
+  menu.addEventListener('click', () => {
+    menu.classList.toggle('active');
+    headerNav.classList.toggle('active');
+    body.classList.toggle('lock');
+  });
+  // menu.onclick = () => {
+  //   menu.classList.toggle('active');
+  // };
 });

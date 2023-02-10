@@ -102,3 +102,29 @@
   margin-bottom: 30px;
   overflow: hidden;
 }
+
+@media (max-width: 900px) {
+  .subtitle-description-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subtitle-description {
+    width: 100%;
+    padding-bottom: 0;
+  }
+
+  .coconut-description {
+    width: 100%;
+  }
+}
+
+@media (max-width: 490px) {
+  .blockquote {
+    margin: 0;
+  }
+
+  .fa-quote-left {
+    font-size: 30px;
+  }
+}

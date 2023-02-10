@@ -67,3 +67,74 @@ address span {
 [class*=ground-pane] {
   filter: grayscale(.5);
 }
+
+@media (max-width: 1275px) {
+  .contact-left {
+    margin-left: 0;
+  }
+
+  .map-container {
+    width: 600px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .contact-schedule-container {
+    max-width: 90%;
+  }
+
+  .map-container {
+    height: 505px;
+  }
+}
+
+@media (max-width: 940px) {
+  .contact-flex-container {
+    flex-direction: column;
+  }
+
+  .contact-schedule-container {
+    max-width: none;
+    margin-bottom: 10px;
+  }
+
+  .contact-title {
+    margin-bottom: 10px;
+  }
+
+  .contact-left {
+    max-width: none;
+    display: flex;
+    /* justify-content: space-between; */
+  }
+
+  .contact-right {
+    max-width: none;
+  }
+
+  .map-container {
+    width: 100%;
+    height: 350px;
+    top: 0;
+    left: 0;
+  }
+
+  .contact-container {
+    padding-bottom: 350px;
+  }
+
+  .icon-social {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 660px) {
+  .contact-left {
+    flex-direction: column;
+  }
+
+  .contact-link-container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
