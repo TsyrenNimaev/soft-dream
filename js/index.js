@@ -142,8 +142,6 @@ window.addEventListener('DOMContentLoaded', function () {
         //закрываем окно при клике на заблюренную область
         if (!el.target.closest('.call-back__content')) {
           modalClose(el.target.closest('.call-back'));
-          // document.getElementById('mySelect').focus();
-          // document.getElementById('mySelect').select();
         }
       });
     }
@@ -198,7 +196,4 @@ window.addEventListener('DOMContentLoaded', function () {
     headerNav.classList.toggle('active');
     body.classList.toggle('lock');
   });
-  // menu.onclick = () => {
-  //   menu.classList.toggle('active');
-  // };
 });

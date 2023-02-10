@@ -1482,8 +1482,6 @@
             </li>
           </ul>
         </div>
-
-
       </div>
     </section>
 
@@ -1538,7 +1536,9 @@
       <p class="call-back__description">
         Выс можете заказать обратный звонок или отправить интересующий Вас вопрос нам на электронную почту.
       </p>
-      <form action="#" class="call-back__form">
+      <form name="form" action="mail.php" enctype="multipart/form-data" method="post" class="call-back__form">
+        <input type="hidden" name="admin_email[]" value="cnimaev@yandex.ru">
+        <input type="hidden" name="form_subject" value="Тема письма">
         <div class="call-back__left">
           <label class="call-back__label">
             <input type="text" class="call-back__input" placeholder="Как Вас зовут?">

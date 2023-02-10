@@ -88,7 +88,6 @@
 }
 
 .menu.active .menu-span:nth-child(1) {
-  /* width: 40px; */
   transform: translateY(0) rotate(45deg);
   transition-delay: 0.125s;
 }

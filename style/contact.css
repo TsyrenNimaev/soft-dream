@@ -105,7 +105,6 @@ address span {
   .contact-left {
     max-width: none;
     display: flex;
-    /* justify-content: space-between; */
   }
 
   .contact-right {

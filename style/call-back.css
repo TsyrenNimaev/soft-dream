@@ -16,7 +16,6 @@
   z-index: 1000;
   background-color: rgba(0, 0, 0, .2);
   transition: opacity .8s ease, visibility .2s ease;
-  /* cursor: pointer; */
 }
 
 .call-back.open {
@@ -112,12 +111,9 @@
 }
 
 .close-btn {
-  /* position: relative; */
   position: absolute;
   top: 20px;
   right: 20px;
-  /* top: -47px;
-  right: -903px; */
   width: 40px;
   height: 40px;
   border: 1px solid var(--table-color);
@@ -197,13 +193,11 @@
 
   .textarea {
     max-width: none;
-    /* width: 100%; */
   }
 
   .call-back__btn {
     display: flex;
     margin-left: auto;
-    /* margin-right: 62px; */
   }
 
   .call-back__input {
