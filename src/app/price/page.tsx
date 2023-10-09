@@ -18,4 +18,4 @@ export default function Price() {
   );
 }
 
-export { Price };
+// export { Price };

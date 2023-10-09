@@ -2,7 +2,7 @@ import { Great_Vibes } from 'next/font/google';
 
 import styles from './About.module.scss';
 
-const greatVibes = Great_Vibes({ weight: '400' });
+const greatVibes = Great_Vibes({ weight: '400', subsets: ['latin'] });
 
 const About = () => {
   return (
