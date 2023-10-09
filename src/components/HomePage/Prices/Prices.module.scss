@@ -1,0 +1,76 @@
+@import '../../../style/variables';
+
+.prices {
+  max-width: 1700px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+
+  h3 {
+    margin-bottom: 45px;
+    font-size: 32px;
+    color: #333;
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+
+    div {
+      width: 33.33%;
+      padding: 60px;
+      border-radius: 60px;
+      background-color: #f2f2f2;
+
+      &:not(:last-child) {
+        margin-right: 15px;
+      }
+
+      h4 {
+        font-size: 20px;
+        margin-bottom: 15px;
+      }
+
+      span {
+        display: inline-block;
+        font-size: 38px;
+        margin-bottom: 25px;
+      }
+
+      ul {
+        font-size: 20px;
+        margin-bottom: 35px;
+
+        li {
+          &:not(:last-child) {
+            margin-bottom: 15px;
+          }
+        }
+      }
+
+      button {
+        width: 100%;
+        padding: 10px 0;
+        border: none;
+        border-radius: 10px;
+        font-size: 20px;
+        background-color: $color-comet;
+        color: $color-romantic;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 15px 0;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: $color-comet;
+    color: $color-romantic;
+    cursor: pointer;
+  }
+}

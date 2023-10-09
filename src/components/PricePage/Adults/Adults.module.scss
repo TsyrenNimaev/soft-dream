@@ -1,0 +1,76 @@
+@import '../../../style/variables';
+
+.adult {
+  position: relative;
+  max-width: 1700px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+
+  h4 {
+    font-size: 32px;
+    margin-bottom: 45px;
+  }
+
+  &__desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 75px;
+
+    p {
+      font-size: 25px;
+      max-width: 50%;
+    }
+  }
+
+  // &__priceContainer {
+  //   &__select {
+  //     display: flex;
+  //   }
+  // }
+
+  .priceCardsAdult {
+
+    &__select {
+      display: flex;
+      margin-bottom: 25px;
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+
+  &__decoration {
+    position: absolute;
+    left: -80px;
+    width: 125px;
+    height: 250px;
+    border: 1px solid $color-comet;
+    border-radius: 50%;
+    z-index: -1;
+    transform: rotate(-45deg);
+
+    // &::before {
+    //   position: absolute;
+    //   content: '';
+    //   bottom: -50px;
+    //   right: 0;
+    //   width: 80px;
+    //   height: 300px;
+    //   border: 1px solid $color-comet;
+    //   border-radius: 50%;
+    //   transform: rotate(90deg);
+    // }
+  }
+}
+
+.react-select-container {
+  width: 100%;
+}
+
+.react-select-container:not(:last-child) {
+  margin-right: 15px;
+}

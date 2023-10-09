@@ -1,0 +1,69 @@
+@import '../../../style/variables';
+
+.gallery {
+  position: relative;
+  max-width: 1700px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+
+  h3 {
+    margin-bottom: 45px;
+    font-size: 32px;
+    color: #333;
+  }
+
+  &__wrap {
+    position: relative;
+    display: flex;
+    
+    img {
+
+      &:last-child {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+
+  &__decoration {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    background-color: transparent;
+
+    span {
+      display: block;
+      position: absolute;
+      right: -160px;
+      bottom: -102px;
+      width: 315px;
+      height: 140px;
+      background-color: transparent;
+      border: 2px solid $color-comet;
+      border-radius: 157px/70px;
+      z-index: -1;
+      transform: rotate(-35deg);
+
+      &:first-child {
+        border: 1px solid $color-comet;
+        border-radius: 157px/107px;
+        height: 215px;
+        top: -40px;
+        left: -135px;
+        transform: rotate(45deg);
+      }
+
+      &:last-child::after {
+        position: absolute;
+        content: '';
+        width: 315px;
+        height: 140px;
+        border: 2px solid $color-comet;
+        border-radius: 157px/70px;
+        background-color: transparent;
+        transform: rotate(-25deg);
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+@import '../../../style/variables';
+
+.hero {
+  position: relative;
+  background-color: $color-comet;
+  padding-top: 70px;
+  margin-bottom: 70px;
+
+  &__decoration {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    background-color: transparent;
+
+    span {
+      display: block;
+      position: absolute;
+      right: -130px;
+      bottom: 35px;
+      width: 315px;
+      height: 140px;
+      background-color: transparent;
+      border: 2px solid $color-white;
+      border-radius: 157px/70px;
+      z-index: 2;
+      transform: rotate(-35deg);
+
+      &:first-child {
+        border: 1px solid $color-white;
+        border-radius: 157px/107px;
+        height: 215px;
+        top: -13px;
+        left: -75px;
+        transform: rotate(45deg);
+      }
+
+      &:last-child::after {
+        position: absolute;
+        content: '';
+        width: 315px;
+        height: 140px;
+        border: 2px solid $color-white;
+        border-radius: 157px/70px;
+        background-color: transparent;
+        transform: rotate(-25deg);
+      }
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1700px;
+    margin: 0 auto;
+
+    div {
+      width: 60%;
+      font-size: 40px;
+      text-transform: uppercase;
+      color: $color-romantic;
+    }
+
+    p {
+      width: 40%;
+      font-size: 25px;
+      color: $color-romantic;
+    }
+  }
+}

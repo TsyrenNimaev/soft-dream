@@ -1,0 +1,193 @@
+@import '../../../style/variables';
+
+.priceCards {
+
+  &__wrap {
+
+    &__select {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 25px;
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+
+      &__card {
+        width: 32.5%;
+        margin-bottom: 15px;
+        padding: 60px;
+        border-radius: 60px;
+        background-color: #f2f2f2;
+
+        span {
+          display: inline-block;
+          font-size: 38px;
+          margin-bottom: 25px;
+        }
+
+        ul {
+          font-size: 20px;
+          margin-bottom: 35px;
+
+          li {
+            position: relative;
+            padding-left: 30px;
+
+            &::before {
+              position: absolute;
+              content: '';
+              left: 0;
+              width: 18px;
+              height: 10px;
+              border-left: 1px solid #23D138;
+              border-bottom: 1px solid #23D138;
+              transform: rotate(-49deg);
+            }
+
+            &:not(:last-child) {
+              margin-bottom: 15px;
+            }
+          }
+        }
+
+        button {
+          width: 100%;
+          padding: 10px 0;
+          border: none;
+          border-radius: 10px;
+          font-size: 20px;
+          background-color: $color-comet;
+          color: $color-romantic;
+          cursor: pointer;
+        }
+      }
+
+      &__empty {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        min-height: 350px;
+        padding: 50px 10px;
+        border-radius: 70px;
+        background-color: #f2f2f2;
+
+        p {
+          font-size: 25px;
+          color: $color-comet;
+          margin-bottom: 35px;
+        }
+
+        div {
+          position: relative;
+          width: 100px;
+          height: 100px;
+          border-radius: 50px;
+          border: 3px solid $color-comet;
+
+          &::before, &::after {
+            position: absolute;
+            content: '';
+            width: 15px;
+            height: 15px;
+            top: 23px;
+            background-color: $color-comet;
+            border-radius: 50%;
+          }
+          
+          &::before {
+            left: 21px;
+
+          }
+
+          &::after {
+            right: 21px;
+            
+          }
+
+          span {
+            position: absolute;
+            left: calc(50% - 10px);
+            top: 28px;
+            width: 15px;
+            height: 15px;
+            border: 10px solid transparent;
+            border-bottom: 15px solid $color-comet;
+
+            &::before {
+              position: absolute;
+              content: '';
+              top: 25px;
+              left: -25px;
+              width: 50px;
+              height: 30px;
+              border-top: 5px solid $color-comet;
+              border-radius: 50%;
+            }
+
+            &::after {
+              position: absolute;
+              content: '';
+              width: 8px;
+              height: 8px;
+              left: 14px;
+              top: 3px;
+              border-radius: 0 50% 50% 50%;
+              background-color: $color-comet;
+              transform: rotate(45deg);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // &__btn {
+  //   position: relative;
+  //   width: 100%;
+  //   padding: 10px 0;
+  //   border: none;
+  //   border-radius: 10px;
+  //   font-size: 20px;
+  //   background-color: $color-comet;
+  //   color: $color-romantic;
+  //   cursor: pointer;
+
+  //   &::after, &::before {
+  //     position: absolute;
+  //     content: '';
+  //     width: 10px;
+  //     height: 10px;
+  //     border-left: 2px solid $color-romantic;
+  //     border-bottom: 2px solid $color-romantic;
+  //     transform: rotate(-45deg);
+  //   }
+
+  //   &::before {
+  //     bottom: 15px;
+  //     left: 55%;
+  //   }
+
+  //   &::after {
+  //     top: 9px;
+  //     left: 55%;
+  //   }
+  // }
+}
+
+.react-select-container {
+  width: 100%;
+}
+
+.react-select-container:not(:last-child) {
+  margin-right: 15px;
+}
+

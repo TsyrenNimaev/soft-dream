@@ -1,0 +1,40 @@
+@import './../../style/variables';
+
+.footer {
+  max-width: 1700px;
+  margin: 0 auto;
+  margin-bottom: 90px;
+  
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    div {
+      .brand__icon {
+        width: 50px;
+        height: 50px;
+        color: $color-comet;
+        cursor: pointer;
+        
+        &:not(:last-child) {
+          margin-right: 10px;
+        }
+      }
+      
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+      
+      &:last-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        color: #333;
+      }
+    }
+  }
+}

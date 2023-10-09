@@ -1,0 +1,81 @@
+@import '../../../style/variables';
+
+.kids {
+  position: relative;
+  max-width: 1700px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+  
+  h4 {
+    font-size: 32px;
+    margin-bottom: 45px;
+  }
+  
+  &__desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+      max-width: 50%;
+      font-size: 25px;
+    }
+
+    &__wrap {
+      position: relative;
+
+      &__img {
+        position: absolute;
+        top: -27px;
+        right: -4px;
+        opacity: .5;
+        z-index: -1;
+      }
+    }
+  }
+
+  &__decoration {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+
+    &__img {
+      position: absolute;
+      
+      &:first-child {
+        left: -84px;
+      }
+
+      &:nth-child(2) {
+        width: 160px;
+        height: 160px;
+        top: 350px;
+        bottom: 0;
+        left: 150px;
+        transform: rotate(32deg);
+      }
+
+      &:last-child {
+        width: 200px;
+        left: 650px;
+        top: 150px;
+        opacity: .5;
+        transform: rotate(26deg);
+      }
+    }
+  }
+
+  // h5 {
+  //   font-size: 28px;
+  //   margin-bottom: 10px;
+  // }
+
+  // div {
+  //   font-size: 22px;
+  //   margin-bottom: 15px;
+  // }
+
+}
